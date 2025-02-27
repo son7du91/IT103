@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <table>
+            <tr>
+                <td><label for="hoten">Họ và tên:</label></td>
+                <td><input type="text" id="hoten" name="hoten"></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email:</label></td>
+                <td><input type="email" id="email" name="email"></td>
+            </tr>
+            <tr>
+                <td><label for="ngaysinh">Ngày sinh:</label></td>
+                <td><input type="date" id="ngaysinh" name="ngaysinh"></td>
+            </tr>
+            <tr>
+                <td>Giới tính:</td>
+                <td>
+                    <input type="radio" id="nam" name="gioitinh" value="Nam">
+                    <label for="nam">Nam</label>
+                    <input type="radio" id="nu" name="gioitinh" value="Nữ">
+                    <label for="nu">Nữ</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="sdt">Số điện thoại:</label></td>
+                <td><input type="tel" id="sdt" name="sdt"></td>
+            </tr>
+            <tr>
+                <td><label for="chuyennganh">Chuyên ngành:</label></td>
+                <td><input type="text" id="chuyennganh" name="chuyennganh"></td>
+            </tr>
+            <tr>
+                <td><label for="namnhaphoc">Năm nhập học:</label></td>
+                <td><input type="number" id="namnhaphoc" name="namnhaphoc"></td>
+            </tr>
+            <tr>
+                <td><label for="gpa">Điểm GPA:</label></td>
+                <td><input type="text" id="gpa" name="gpa"></td>
+            </tr>
+            <tr>
+                <td><label for="diachi">Địa chỉ:</label></td>
+                <td><textarea id="diachi" name="diachi" cols="30" rows="3"></textarea></td>
+            </tr>
+            <tr>
+                <td><label for="lophoc">Lớp học:</label></td>
+                <td>
+                    <select id="lophoc" name="lophoc">
+                        <option value="lop1">Lớp 1</option>
+                        <option value="lop2">Lớp 2</option>
+                        <option value="lop3">Lớp 3</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="ngaydangky">Ngày đăng ký học:</label></td>
+                <td><input type="datetime-local" id="ngaydangky" name="ngaydangky"></td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                    <button type="submit">Gửi thông tin</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
