@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .search-box {
+            background-color: white;
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            border-radius: 50px;
+            width: 500px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            position: absolute;
+            cursor: grab;
+        }
+        .search-box input {
+            border: none;
+            outline: none;
+            flex: 1;
+            font-size: 16px;
+            padding: 10px;
+        }
+        .search-box .icon {
+            margin: 0 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="search-box" id="searchBox">
+        <span class="icon">🔍</span>
+        <input type="text" placeholder="Nhập từ khóa tìm kiếm">
+        <span class="icon">🎤</span>
+        <span class="icon">📷</span>
+    </div>
+    
+    <script>
+        const searchBox = document.getElementById("searchBox");
+        let offsetX, offsetY, isDragging = false;
+        
+        searchBox.addEventListener("mousedown", (e) => {
+            isDragging = true;
+            offsetX = e.clientX - searchBox.getBoundingClientRect().left;
+            offsetY = e.clientY - searchBox.getBoundingClientRect().top;
+            searchBox.style.cursor = "grabbing";
+        });
+        
+        document.addEventListener("mousemove", (e) => {
+            if (!isDragging) return;
+            searchBox.style.left = `${e.clientX - offsetX}px`;
+            searchBox.style.top = `${e.clientY - offsetY}px`;
+        });
+        
+        document.addEventListener("mouseup", () => {
+            isDragging = false;
+            searchBox.style.cursor = "grab";
+        });
+    </script>
+</body>
+</html>
