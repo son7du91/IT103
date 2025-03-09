@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 10px;
+            width: 80%;
+        }
+        .left {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .big {
+            background-color: #2c3e50;
+            color: white;
+            padding: 100px;
+            text-align: center;
+        }
+        .right {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+        }
+        .small {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <div class="big">Big</div>
+            <div class="big">Big</div>
+        </div>
+        <div class="right">
+            <div class="small">Small 1</div>
+            <div class="small">Small 2</div>
+            <div class="small">Small 3</div>
+            <div class="small">Small 4</div>
+            <div class="small">Small 5</div>
+            <div class="small">Small 6</div>
+            <div class="small">Small 7</div>
+            <div class="small">Small 8</div>
+        </div>
+    </div>
+</body>
+</html>
