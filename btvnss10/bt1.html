@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+        }
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #cfc2c2;
+            padding: 15px 40px;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            font-style: italic;
+        }
+        .links {
+            display: flex;
+            list-style: none;
+            padding: 0;
+        }
+        .links li {
+            margin: 0 15px;
+        }
+        .links a {
+            text-decoration: none;
+            color: #775a5a;
+            font-weight: 500;
+            transition: color 0.3s ease-in-out;
+        }
+        .links a:hover {
+            color: #0c0c0d;
+        }
+        .search {
+            display: flex;
+            align-items: center;
+            background-color: #aca9a9;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .search:hover {
+            background-color: #898686;
+        }
+        .search img {
+            width: 16px;
+            height: 16px;
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="container">
+        <div class="logo">sport <b>news</b></div>
+        <ul class="links">
+            <li><a href="#">home</a></li>
+            <li><a href="#">category</a></li>
+            <li><a href="#">trending news</a></li>
+            <li><a href="#">recent news</a></li>
+            <li><a href="#">clubs ranking</a></li>
+            <li><a href="#">sports article</a></li>
+        </ul>
+        <button class="search">
+            <img src="https://img.pikbest.com/png-images/qiantu/magnifying-glass-icon_2690769.png!sw800" alt="search">
+            search
+        </button>
+    </nav>
+</body>
+</html>
