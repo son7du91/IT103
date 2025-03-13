@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+    <style>
+        body {
+            font-family: arial, sans-serif;
+            background-color: #e2e2e2;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .slider {
+            width: 80%;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .item {
+            position: relative;
+        }
+        .item img {
+            width: 100%;
+            border-radius: 10px;
+            display: block;
+        }
+        .content {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            color: white;
+            max-width: 60%;
+        }
+        .category {
+            background: black;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            position: absolute;
+            top: 15px;
+            left: 20px;
+        }
+        .date {
+            font-size: 14px;
+            margin: 5px 0;
+        }
+        h2 {
+            font-size: 22px;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        .description {
+            font-size: 14px;
+        }
+        .pagination {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 15px;
+        }
+        .pagination button {
+            background: white;
+            border: none;
+            padding: 20px;
+            padding-left: 60px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+        .page-number {
+            margin: 0 5px;
+            font-size: 16px;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+        .page-number.active {
+            background: black;
+            color: white;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="slider">
+        <div class="item">
+            <img src="https://imgnvsk.vnanet.vn/MediaUpload/Medium/2023/09/06/shutterstock-2190840355-scaled6-11-31-13.jpg"
+                alt="football news">
+                <span class="category">football</span>
+            <div class="content">
+                <p class="date">agence france-presse - 04 june 2023</p>
+                <h2>lionel messi leaving ligue 1 team <br> paris saint-germain, club confirms</h2>
+                <p class="description">
+                    the euroleague finals top scorer is the individual award for the player
+                    that gained the highest points in the euroleague finals
+                </p>
+            </div>
+        </div>
+        <div class="pagination">
+            <button class="prev">←</button>
+            <span class="page-number active">1</span>
+            <span class="page-number">2</span>
+            <span class="page-number">3</span>
+            <span class="page-number">4</span>
+            <button class="next">→</button>
+        </div>
+    </div>
+</body>
+</html>
