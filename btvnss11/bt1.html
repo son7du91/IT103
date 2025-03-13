@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+    text-align: center;
+    color: white;
+    margin-top: 10px;
+    height: 300px;
+    gap: 10px;
+
+}
+.background-color{
+    background-color: rgb(11, 11, 80);
+}
+
+.header {
+    padding: 10px;
+    background-color: rgb(255, 0, 0);
+    border-radius: 10px;
+    font-size: 15px;
+    text-align: center; 
+    
+}
+.sidebar{
+    display: flex;
+}
+
+.sidebar1 {
+    background-color: green;
+    width: 20%;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px 10px 10px 0;
+}
+
+.content {
+    background-color: yellow;
+    color: black;
+    width: auto;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+
+
+}
+
+.sidebar2 {
+    background-color: rgb(239, 81, 108);
+    width: 20%;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px 10px 10px 0;
+
+}
+
+.footer {
+    background-color: blue;
+    text-align: center;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 1024px) {
+    .sidebar {
+    flex-direction: column; 
+}
+.sidebar1,
+.sidebar2,
+.content,
+.footer, .header, .background-color {
+    width: auto;
+    margin: 10px;
+}
+}
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header"><h2>Header</h2></div>
+        <div class="sidebar">
+        <div class="sidebar1"><h2>Sidebar 1</h2></div>
+        <div class="content"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita modi repellat laboriosam nam id voluptatibus ab quae, quaerat accusamus voluptatem, cumque hic, repudiandae laudantium ametexercitationem numquam. Quaerat obcaecati deleniti quae ut repellendus praesentium modi illum corporis incidunt, nobis molestias inventore fugit voluptatibus tempora rem necessitatibus ipsam. Odio aperiam deserunt quia, enim voluptatem doloremque nobis exercitationem eum, quis, voluptate ullam minus quidem eos consectetur itaque! Soluta non similique quod quae odit? Possimus mollitia nemo itaque perferendis perspiciatis voluptates nostrum consequuntur saepe, aliquid, repellendus eligendi cumque explicabo adipisci aperiam velit earum repellat autem sequi? Asperiores soluta,tempore dolor suscipit enim possimus!</p></div>
+        <div class="sidebar2"><h2>Sidebar 2</h2></div>
+        </div>
+        <div class="footer"><h2>Footer</h2></div>
+    </div>
+</div>
+</body>
+
+</html>                 
