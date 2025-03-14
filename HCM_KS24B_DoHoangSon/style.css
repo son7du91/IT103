@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+body {
+    background-color: white;
+    padding: 20px;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+}
+.logo p {
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+}
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+}
+.right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.right img {
+    height: 24px;
+    cursor: pointer;
+}
+.download-btn {
+    background-color: #111827;
+    color: white;
+    text-decoration: none;
+    padding: 8px 14px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.content {
+    display: flex;
+    align-items: center;
+    max-width: 1100px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.left-section {
+    max-width: 60%;
+}
+.title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.title h1 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.title img {
+    height: 40px;
+}
+.description {
+    margin: 15px 0;
+    color: #3e3d3d;
+    font-size: 16px;
+    line-height: 1.6;
+}
+.icontext {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.icontext img {
+    height: 8px;
+    width: 8px; 
+}
+.status {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    background-color: #19cf19;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.social-icons img {
+    width: 24px;
+}
+.right-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+.profile-pic {
+    padding: 5px;
+    display: inline-block;
+    position: relative;
+}
+.profile-pic img {
+    width: 180px;
+    height: auto;
+    box-shadow: 10px 10px 1px rgb(197, 174, 174);
+}
+.skills {
+    margin-top: 50px;
+    text-align: center;
+}
+.skills-title {
+    display: inline-block;
+    background: white;
+    padding: 6px 15px;
+    border-radius: 15px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #343131;
+    margin-bottom: 10px;
+}
+.skills-description {
+    margin: 15px 0;
+    font-size: 16px;
+    color: #4c4949;
+    text-align: center;
+}
+.skills-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+.skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.skill img {
+    display: block;
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+.skill p {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #454242;
+    text-align: center;
+}
+
