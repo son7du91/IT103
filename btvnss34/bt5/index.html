@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="container">
+        <h2>danh sách nhân viên rikkei</h2>
+        <div class="form-group">
+            <input type="text" id="name" placeholder="tên nhân viên">
+            <input type="text" id="position" placeholder="chức vụ">
+            <button onclick="add_employee()">thêm nhân viên</button>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>stt</th>
+                    <th>tên</th>
+                    <th>chức vụ</th>
+                </tr>
+            </thead>
+            <tbody id="employee-list"></tbody>
+        </table>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

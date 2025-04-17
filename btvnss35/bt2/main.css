@@ -1,0 +1,61 @@
+body {
+    font-family: arial;
+    background: #2e1b4f;
+    color: white;
+    margin: 0;
+    padding: 20px;
+}
+.container {
+    max-width: 500px;
+    margin: auto;
+    text-align: center;
+}
+h1 {
+    background-color: #1d1335;
+    padding: 15px;
+    border-radius: 10px;
+}
+.form {
+    background-color: #774eb7;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+}
+button {
+    padding: 10px 20px;
+    background-color: white;
+    color: #774eb7;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.bookmark {
+    background: #1d1335;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.bookmark a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+.bookmark button {
+    background-color: red;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+}

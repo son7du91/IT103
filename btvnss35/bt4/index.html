@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <input type="text" id="nameinput" placeholder="tên nhân viên">
+    <input type="text" id="positioninput" placeholder="chức vụ">
+    <button onclick="addemployee()">thêm nhân viên</button>
+    <table>
+        <thead>
+            <tr>
+                <th>stt</th>
+                <th>tên</th>
+                <th>chức vụ</th>
+            </tr>
+        </thead>
+        <tbody id="employeetablebody"></tbody>
+    </table>
+    <div class="pagination" id="pagination"></div>
+    <script src="main.js"></script>
+</body>
+</html>
